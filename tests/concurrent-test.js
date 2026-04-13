@@ -24,7 +24,7 @@ import https from 'https';
 function parseArgs() {
     const args = process.argv.slice(2);
     const config = {
-        url: 'http://localhost:3000',
+        url: 'http://localhost:8045',
         apiKey: '123456',
         concurrency: 10,
         totalRequests: 100,
@@ -76,7 +76,7 @@ function parseArgs() {
   node tests/concurrent-test.js [选项]
 
 选项:
-  --url <url>           API 服务器地址 (默认: http://localhost:3000)
+  --url <url>           API 服务器地址 (默认: http://localhost:8045)
   --api-key <key>       API 密钥 (默认: 123456)
   --concurrency <n>     并发数 (默认: 10)
   --requests <n>        总请求数 (默认: 100)

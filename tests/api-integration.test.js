@@ -15,7 +15,7 @@ import { fetch } from 'undici';
  */
 
 // Test server configuration
-const TEST_SERVER_BASE_URL = 'http://192.168.1.232:3000';
+const TEST_SERVER_BASE_URL = 'http://192.168.1.232:8045';
 const TEST_API_KEY = '123456'; // You may need to adjust this based on your server config
 const MODEL_PROVIDER = {
     // Model provider constants
@@ -675,7 +675,7 @@ describe('API Integration Tests with HTTP Requests', () => {
                 'OPTIONS',
                 'none',
                 {
-                    'Origin': 'http://localhost:3000',
+                    'Origin': 'http://localhost:8045',
                     'Access-Control-Request-Method': 'POST',
                     'Access-Control-Request-Headers': 'Content-Type, Authorization'
                 }

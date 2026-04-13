@@ -1791,11 +1791,11 @@ const translations = {
 };
 
 // 当前语言
-let currentLanguage = localStorage.getItem('language') || 'zh-CN';
+let currentLanguage = localStorage.getItem('language') || 'en-US';
 
 // 获取翻译文本
 export function t(key, params = {}) {
-    let text = translations[currentLanguage]?.[key] || translations['zh-CN']?.[key] || key;
+    let text = translations[currentLanguage]?.[key] || translations['en-US']?.[key] || key;
     
     // 替换参数
     Object.keys(params).forEach(param => {
